@@ -1,6 +1,6 @@
 import React from 'react';
-import styles from './Filter.module.css';
 import PropTypes from 'prop-types';
+import styles from './Filter.module.css';
 
 const Filter = ({ value, onChange }) => (
   <div className={styles.filter}>

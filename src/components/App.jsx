@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-// import shortid from 'shortid';
 import { nanoid } from 'nanoid';
 import styles from './App.module.css';
 import ContactList from './ContactList/ContactList';
