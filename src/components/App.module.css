@@ -6,3 +6,13 @@
   margin-top: 70px;
   color: #d4a373;
 }
+
+.Layout {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 18;
+
+  color: #010101;
+}

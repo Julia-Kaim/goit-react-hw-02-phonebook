@@ -19,15 +19,15 @@ class App extends Component {
   addContact = ({ name, number }) => {
     const normalizedName = name.toLowerCase();
 
-    let isAdded = false;
+    let isExist = false;
     this.state.contacts.forEach(el => {
       if (el.name.toLowerCase() === normalizedName) {
         alert(`${name} is already in contacts`);
-        isAdded = true;
+        isExist = true;
       }
     });
 
-    if (isAdded) {
+    if (isExist) {
       return;
     }
     const contact = {
@@ -64,18 +64,7 @@ class App extends Component {
     const visibleContacts = this.getVisibleContacts();
 
     return (
-      <div
-        style={{
-    
-          display: 'flex',
-          justifyContent: 'center',
-          alignItems: 'center',
-          flexDirection: 'column',
-          fontSize: 18,
-      
-          color: '#010101',
-        }}
-      >
+      <div className={styles.Layout}>
         <h1 className={styles.titleContacts}>Phonebook</h1>
         <ContactForm onSubmit={this.addContact} />
 
